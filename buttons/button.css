@@ -1,0 +1,69 @@
+.buttons_wrap {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    width: 100%;
+    height:400px;
+}
+p {
+hyphens: auto;
+}
+
+
+/* btn */
+
+.btn {
+    height:45px;
+    width:170px;
+}
+.btn_blue {
+    background: url("../buttons/button/btn_blue_default.png") no-repeat center center;
+    background-size: contain;
+    background-position: center;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.btn_blue:hover {
+    background-image: url("../buttons/button/btn_blue_hover.png");
+    transition: 0.5s;
+}
+.btn_blue:active {
+    background-image: url("../buttons/button/btn_blue_active.png");
+    transition: 0.5s;
+}
+
+.btn_brown {
+    background: url("../buttons/button/btn_brown_default.png") no-repeat center center;
+    background-size: contain;
+    background-position: center;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.btn_brown:hover {
+    background-image: url("../buttons/button/btn_brown_hover.png");
+    transition: 0.5s;
+}
+.btn_brown:active {
+    background-image: url("../buttons/button/btn_brown_active.png");
+    transition: 0.5s;
+}
+
+.btn_not_active:disabled {
+    background-image: url("../buttons/button/btn_not_active.png");
+    transition: 0.5s;
+}
+/* end BUTTON */
+
+
+/* dont need */
+
+.button_html {
+    width:100%;
+    min-height:200px;
+    background:rgba(0,0,0,0.1);
+    padding:10px;
+    border: 1px dashed grey;
+}

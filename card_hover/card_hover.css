@@ -1,0 +1,143 @@
+.container_card {
+    max-width:100%;
+    height:650px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:center;
+    overflow-x:scroll;
+    gap:300px;
+}
+
+.hidden_card,.card {
+    height:420px;
+    width:320px;
+    border:1px solid black;
+    padding:10px;
+    position:absolute;
+    box-shadow: 2px 0px 10px 5px rgba(0, 0, 0, .2);
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:start;
+    margin: 0px 5px 0px 5px;
+}
+
+.count_card {
+    flex: 0 0  auto;
+}
+.title_card {
+    flex: 0 0 auto;
+}
+.list_card {
+    overflow-x:scroll;
+    flex: 1 1 auto;
+}
+.wrap_barcode {
+    flex: 0 0 auto;
+    display:flex;
+    width:100%;
+    justify-content:flex-end;
+}
+
+
+.card {
+    background: white;
+    z-index:1;
+}
+.hidden_card {
+    background: black;
+}
+
+.count_card h1 {
+    font-size:72px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.title_card h6 {
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-transform:uppercase;
+}
+
+.card h1 {
+    color: black;
+}
+.hidden_card h1 {
+    color:white;
+}
+
+.card h6 {
+    color:black;
+}
+.hidden_card h6 {
+    color:white;
+}
+
+.list_card ul {
+    opacity:black;
+    padding:20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+}
+
+.wrap_card {
+    height:420px;
+    width:320px;
+    position:relative;
+    margin: 0px 5px 0px 5px;
+}
+
+
+
+
+
+
+/* штрихкод barcode */
+.barcode {
+    display:flex;
+    width: 100px;
+    height: 55px;
+    right: 3%;
+    bottom: 3%;
+}
+
+.line1 {
+    width:4px;
+    height:50px;
+    background: white;
+    border-left:1px solid black;
+    border-right:2px solid black;
+}
+
+.line2 {
+    margin:0 1px;
+    width:5px;
+    height:50px;
+    background: white;
+    border-left:2px solid black;
+    border-right:1px solid black;
+}
+
+.card_active {
+    transform: rotate(-5deg);
+    transform-origin: -50%;
+    top: -40px;
+    transition: 0.5s all;
+}
+
+.hidden_card_active {
+    transform: rotate(5deg);
+    top: 40px;
+    z-index:2;
+    transition: 0.5s all;
+}
+
+/* END штрихкод barcode */
+/*  end section_about_content */
+

@@ -1,0 +1,46 @@
+.head {
+    border-bottom: 2px dashed grey;
+    margin-bottom:50px;
+    height:100px;
+    width:100%;
+}
+
+.navigation_site {
+    width:100%
+    min-height:500px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    gap:1em;
+}
+
+.chapter {
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    justify-content:flex-start;
+    align-items:center;
+    box-sizing:border-box;
+    border:2px dashed grey;
+    border-radius:5px;
+    min-height:80px;
+}
+
+.chapter_title {
+    flex: 1 1 auto;
+    padding:5px;
+}
+.form {
+    flex: 1 1 auto;
+    display:flex;
+    justify-content:flex-end;
+    margin-left: auto;
+}
+
+.in_head {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+}
