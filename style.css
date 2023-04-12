@@ -1,9 +1,4 @@
-.head {
-    border-bottom: 2px dashed grey;
-    margin-bottom:50px;
-    height:100px;
-    width:100%;
-}
+
 
 .navigation_site {
     width:100%
@@ -36,11 +31,4 @@
     display:flex;
     justify-content:flex-end;
     margin-left: auto;
-}
-
-.in_head {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    align-items:center;
 }

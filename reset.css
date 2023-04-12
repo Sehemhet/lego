@@ -30,11 +30,22 @@ button {
     background-position: center center;
 }
 
+.head {
+    border-bottom: 2px dashed grey;
+    margin-bottom:50px;
+    height:100px;
+    width:100%;
+}
+
 .in_head {
     max-width:1092px;
     height:100px;
     margin: 0 auto;
     display:flex;
+    justify-content:space-around;
+    align-items:center;
+    display:flex;
+    flex-wrap:wrap;
     justify-content:space-around;
     align-items:center;
 }
@@ -53,9 +64,10 @@ button {
 }
 
 h1 {
-    font-size:40px;
+    font-size:300%;
     font-family: Georgia;
     color: red;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 a {
@@ -76,4 +88,5 @@ a:hover {
     align-items:center;
     padding: 20px;
 }
+
 
