@@ -30,6 +30,8 @@ btn.oninput = function () {
     }
 }
 
+
+
 //link.addEventListener('click', function(){
 //    link.classList.remove('lang_link')
 //})
