@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
 <!--закомментироваться test.css проект без разметки (обвести и нажать (command + / ))-->
-<!--    <link rel="stylesheet" href="../test.css">-->
+    <link id="test_css" disabled rel="stylesheet" href="test.css">
 </head>
 <body>
     <div class="head">
@@ -23,6 +23,9 @@
     <div class="menu">
         <div class="in_menu">
             <a href="../index.html">главная страница</a>
+            <div class="button_css">
+                <input id="button" type="checkbox">Включить разметку</input>
+            </div>
         </div>
     </div>
     <div class="main">
@@ -604,4 +607,5 @@
     </div>
 </body>
 <script src="card_hover.js"></script>
+<script src="../script.js"></script>
 </html>

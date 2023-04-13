@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="popup_menu.css">
+    <link id="test_css" disabled rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="head">
+        <div class="in_head">
+            <h1>
+                LEGO
+            </h1>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="in_menu">
+            <a href="../index.html">главная страница</a>
+            <div class="button_css">
+                <input id="button" type="checkbox">Включить разметку</input>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="in_main">
+
+
+            <div class="lang_net">
+                <div class="lang">
+                    <div class="item_lang">
+                        <a class="item_link lang_link" href="../index.html"><span>UKR</span></a>
+                        <a class="item_link lang_link" href="../index.html"><span>ENG</span></a>
+                        <a class="item_link lang_link" href=""><span>RU</span></a>
+                        <a class="item_link lang_link" href=""><span>FRA</span></a>
+                        <a class="item_link lang_link" href=""><span>DET</span></a>
+                    </div>
+                </div>
+                <div class="net">
+                    <a href=""><img src="fb_icon.png" alt=""></a>
+                    <a href=""><img src="ins_icon.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="comment">
+        <div class="in_comment">
+            <p>
+                работа разметки <br><br>
+                btn = document.querySelector("#button")<br>
+                link = document.querySelector("#test_css")<br>
+                btn.oninput = function () {<br>
+                    if (btn.checked) {<br>
+                        link.removeAttribute('disabled');<br>
+                    } else {<br>
+                        link.setAttribute('disabled',true);<br>
+                    }<br>
+                }<br>
+            </p>
+            <span>
+                выпадающее меню языков <br> <br>
+                let langOpen = document.querySelector('.item_lang')<br>
+                let langOpenActive = document.querySelector('.item_lang__active')<br>
+                let langLink = document.querySelectorAll('.lang_link')<br>
+                let langLinkActive = document.querySelector('.lang_link__active')<br>
+                let link = document.querySelectorAll('.item_link')<br>
+                langOpen.addEventListener('click', function(){<br>
+                    langOpen.classList.toggle('item_lang__active')<br>
+                });<br>
+
+                //не работает ссылка, но работают стили <br>
+                var linkList = document.querySelector(".item_lang"); <br>
+                var linkItem = document.querySelectorAll(".lang_link"); <br>
+
+                linkList.addEventListener("click", function(event) { <br>
+                  event.preventDefault(); <br>
+                  for(var i = 0; i < linkItem.length; i++) { <br>
+                    linkItem[i].classList.toggle("lang_link__active"); <br>
+                  } <br>
+                }); <br>
+            </span>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="in_footer">
+            <h1>
+                footer
+            </h1>
+        </div>
+    </div>
+</body>
+<script src="../script.js"></script>
+<script src="pop_menu.js"></script>
+</html>

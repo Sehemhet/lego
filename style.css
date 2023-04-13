@@ -17,9 +17,8 @@
     justify-content:flex-start;
     align-items:center;
     box-sizing:border-box;
-    border:2px dashed grey;
-    border-radius:5px;
-    min-height:80px;
+    border-bottom:2px dashed blue;
+    height:80px;
 }
 
 .chapter_title {
@@ -31,4 +30,19 @@
     display:flex;
     justify-content:flex-end;
     margin-left: auto;
+}
+
+.button_css {
+    width:200px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom: 2px dashed blue;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+#button {
+    width:100px;
 }

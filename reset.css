@@ -1,4 +1,4 @@
-*, body {
+body {
     margin:0;
     padding: 0;
     box-sizing:border-box;
@@ -17,7 +17,7 @@ button {
 
 .main,.comment,.menu {
     width:100%;
-    height:auto;
+    min-height:200;
     margin: 50px 0px 50px 0px;
 }
 
@@ -52,7 +52,7 @@ button {
 .in_main {
     max-width:1092px;
     margin: 0 auto;
-    min-height:70vh;
+    min-height:200px;
 }
 .in_footer {
     max-width:1092px;
@@ -64,6 +64,7 @@ button {
 }
 
 h1 {
+    display:flex;
     font-size:50px;
     font-family: Georgia;
     color: red;
@@ -71,16 +72,19 @@ h1 {
 }
 
 a {
-    font-size:20px;
     text-decoration:none;
     color:black;
+    /*
     text-shadow: 1px 1px 2px blue, 0 0 1em blue, 0 0 0.2em blue;
+    */
 }
 a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1s all;
     opacity:0.8;
+    /*
     text-shadow: 1px 1px 2px green, 0 0 1em green, 0 0 0.2em green;
+    */
 }
 
 .in_comment {
@@ -101,7 +105,7 @@ a:hover {
     flex-wrap:wrap;
     justify-content:space-around;
     align-items:center;
-    height:100px;
+    min-height:100px;
     border-top: 1px dashed blue;
     border-bottom: 1px dashed blue;
 }
@@ -114,4 +118,3 @@ a:hover {
     text-decoration:none;
     font-size:30px;
 }
-

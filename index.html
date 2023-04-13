@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="buttons/button.css">
     <link rel="stylesheet" href="style.css">
-<!--закомментироваться test.css проект без разметки (обвести и нажать (command + / ))-->
-<!--    <link rel="stylesheet" href="./test.css"></head>-->
+    <link id="test_css" disabled rel="stylesheet" href="test.css">
+</head>
 <body>
+
     <div class="head">
         <div class="in_head">
             <h1>
@@ -23,6 +24,9 @@
     <div class="menu">
         <div class="in_menu">
             <a href="index.html">главная страница</a>
+            <div class="button_css">
+                <input id="button" type="checkbox">Включить разметку</input>
+            </div>
         </div>
     </div>
     <div class="main">
@@ -69,6 +73,16 @@
                         </button>
                     </form>
                 </div>
+                <div class="chapter">
+                    <div class="chapter_title">
+                        <h3>сплывающее меню по клику</h3>
+                    </div>
+                    <form class="form" action="popup_menu/popup_menu.html">
+                        <button class="btn btn_blue">
+                            <span class="">Перейти</span>
+                        </button>
+                    </form>
+                </div>
 
             </div>
         </div>
@@ -82,4 +96,5 @@
     </div>
 
 </body>
+<script src="script.js"></script>
 </html>
