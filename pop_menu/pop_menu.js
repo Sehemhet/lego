@@ -18,7 +18,6 @@ linkList.addEventListener("click", function(event) {
   }
 });
 
-
 //работа разметки
 btn = document.querySelector("#button")
 link = document.querySelector("#test_css")
