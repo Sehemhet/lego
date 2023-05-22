@@ -16,7 +16,32 @@ hyphens: auto;
 .btn {
     height:45px;
     width:170px;
+    position:relative;
 }
+.btn::before {
+    content:'';
+    display:flex;
+    height:100%;
+    width:1.5em;
+    top:0;
+    left:0;
+    background-color:rgba(255,255,255,0.5);
+    transform:skewX(-45deg) translateX(-4em);
+    position:absolute;
+}
+.btn:hover:before {
+    animation: move_light 1s infinite;
+}
+
+@keyframes move_light {
+    from {
+        transform:transform:skewX(-45deg) translateX(-5em);
+    }
+    to {
+        transform:skewX(-45deg) translateX(20em);
+    }
+}
+
 .btn_blue {
     background: url("../buttons/button/btn_blue_default.png") no-repeat center center;
     background-size: contain;
@@ -41,19 +66,24 @@ hyphens: auto;
     display:flex;
     justify-content:space-around;
     align-items:center;
+    transition: 0.5s;
+    transition-property: all;
+    transition-duration: 1s;
+    position:relative;
+    height:45px;
+    width:170px;
 }
+
 .btn_brown:hover {
     background-image: url("../buttons/button/btn_brown_hover.png");
-    transition: 0.5s;
 }
+
 .btn_brown:active {
     background-image: url("../buttons/button/btn_brown_active.png");
-    transition: 0.5s;
 }
 
 .btn_not_active:disabled {
     background-image: url("../buttons/button/btn_not_active.png");
-    transition: 0.5s;
 }
 /* end BUTTON */
 

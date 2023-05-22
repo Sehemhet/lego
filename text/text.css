@@ -1,0 +1,11 @@
+.wrap_center_text {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:50%;
+    text-align:center;
+    margin:100px auto;
+}
+.wrap_center_text {
+    font-size:70px;
+}

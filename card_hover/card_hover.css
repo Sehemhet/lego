@@ -93,11 +93,6 @@
     margin: 0px 5px 0px 5px;
 }
 
-
-
-
-
-
 /* штрихкод barcode */
 .barcode {
     display:flex;
@@ -140,4 +135,6 @@
 
 /* END штрихкод barcode */
 /*  end section_about_content */
+
+
 

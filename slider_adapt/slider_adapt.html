@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="slider_adapt.css">
+    <!--закомментироваться test.css проект без разметки (обвести и нажать (command + / ))-->
+    <link id="test_css" disabled rel="stylesheet" href="test.css">
+</head>
+<body>
+<div class="head">
+    <div class="in_head">
+        <h1>
+            LEGO
+        </h1>
+    </div>
+</div>
+<div class="menu">
+    <div class="in_menu">
+        <a href="../index.html">главная страница</a>
+        <div class="button_css">
+            <input id="button" type="checkbox">Включить разметку
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="in_main slider_html">
+
+        <div class="flex-row">
+            <div class="row__item flex-column">
+                <div class="container">
+                    <div class="slider">
+                        <div class="slider-line idSlide">
+                            <img class="slider__img" src="../12341231.png" alt="">
+                            <img class="slider__img" src="../321312.png" alt="">
+                            <img class="slider__img" src="../s5_person.png" alt="">
+                            <img class="slider__img" src="../32131.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_center">
+                    <button onclick="clickSlides(-1)" class="slider-prev btn"> < </button>
+                    <button onclick="clickSlides(1)" class="slider-next btn"> > </button>
+                </div>
+            </div>
+            <div class="row__item">
+                <div class="flex-column">
+                    <h2>
+                        title
+                    </h2>
+                    <ul class="flex-column">
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, reprehenderit.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row__item">
+                <div class="flex-column">
+                    <h2>
+                        title
+                    </h2>
+                    <ul class="flex-column">
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, reprehenderit.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap_cont">
+            <div class="container">
+                <div class="slider">
+                    <div class="slider-line idSlide">
+                        <img class="slider__img" src="../12341231.png" alt="">
+                        <img class="slider__img" src="../321312.png" alt="">
+                        <img class="slider__img" src="../s5_person.png" alt="">
+                        <img class="slider__img" src="../32131.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="wrap_center">
+                <button onclick="clickSlides(-1)" class="slider-prev btn"> < </button>
+                <button onclick="clickSlides(1)" class="slider-next btn"> > </button>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<div class="footer">
+    <div class="in_footer">
+        <h1>
+            footer
+        </h1>
+    </div>
+</div>
+<script src="./slider_adapt.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

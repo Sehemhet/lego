@@ -1,0 +1,120 @@
+.wrapper_3_words {
+    min-height:600px;
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    position:relative;
+    margin-bottom:100px;
+}
+.abs {
+    position:absolute;
+}
+.word_1 {
+    left:22%;
+    z-index:1;
+}
+.text_1 {
+    top:125px;
+    left:0px;
+    width:365px;
+    z-index:2;
+    background:white;
+}
+.word_2 {
+    right:0%;
+    top:200px;
+    z-index:1;
+}
+.text_2 {
+    left:38%;
+    top:330px;
+    width:350px;
+    z-index:2;
+    background:white;
+}
+.word_3 {
+    bottom:0;
+    left:18%;
+    z-index:1;
+}
+.text_3 {
+    top:530px;
+    left:29%;
+    width:270px;
+    z-index:2;
+    background:white;
+}
+
+
+.wrapper_3_words h1 {
+    font-family: 'Mak';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 160px;
+    line-height: 192px;
+    color: #323232;
+}
+.wrapper_3_words span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #323232;
+}
+@media (max-width:700px) {
+    .abs {
+        position:relative;
+        z-index:1;
+        width:100%;
+        margin:0px;
+        padding:0px;
+        left:0px;
+        top:0px;
+        bottom:0px;
+        right:0px;
+        transition: 2s all;
+    }
+    .abs h1 {
+        display:flex;
+        justify-content:space-around;
+        font-size:10vh;
+        transition: 2s all;
+    }
+    .abs span {
+        display:flex;
+        width:90%;
+        text-align:center;
+        margin:0 auto;
+        transition: 2s all;
+    }
+
+}
+
+
+
+@font-face {
+    font-display: swap;
+    font-family: 'Mak';
+    font-style: normal;
+    font-weight: 300;
+    src:    url('../fonts/MAK.woff') format('woff'),
+            url('../fonts/MAK-bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v30-cyrillic_latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-cyrillic_latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+
+/*
+* {
+    background:rgba(0,0,0,0.1);
+    border:1px solid black;
+}

@@ -1,0 +1,76 @@
+.wrap_button_center {
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    box-sizing:border-box;
+}
+
+.gradient_wrap {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:50px;
+    width:150px;
+    position:relative;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+.gradient_wrap:hover .gradient_button::before {
+    transform:translate(0%);
+    transition-property: all;
+    transition-duration: 1s;
+}
+.gradient_wrap:hover .gradient_text::before {
+    transform:translate(0%);
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.gradient_button {
+    box-sizing:border-box;
+    width:100%;
+    height:45px;
+    background:green;
+    top:0;
+    left:0;
+    position:absolute;
+    overflow:hidden;
+}
+.gradient_text {
+    height:50px;
+    width:100px;;
+    border:1px solid green;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    z-index:2;
+}
+.gradient_text::before {
+    box-sizing:border-box;
+    display:flex;
+    content:'';
+    top:0;
+    height:50px;
+    width:100px;
+    border:1px solid orange;
+    position:absolute;
+    transform:translateX(-200%);
+}
+
+.gradient_button::before {
+    display:flex;
+    content:'';
+    top:0;
+    left:0;
+    height:45px;
+    width:150px;
+    position:absolute;
+    transform:translate(-200%);
+    background:orange;
+    box-shadow: 10px 2px 50px 50px orange;
+}
+
+

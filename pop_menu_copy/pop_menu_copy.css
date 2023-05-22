@@ -5,28 +5,50 @@
     width:100%;
     height:40px;
 }
-
 .lang {
     width:70%;
     display:flex;
     flex-wrap:nowrap;
     align-items:center;
 }
-
-
-.item_lang {
+.empty_item_lang {
     width:70px;
     display:flex;
     overflow:hidden;
 }
 
-.item_lang__active {
-    pointer-events: auto;
-    cursor: pointer;
-    width:100%;
+.empty_item_lang_none {
+    display:none;
+    transition: 1s all;
+}
+/* scrollbar none scrollbar_none */
+.scrollbar_none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.item_lang a {
+.scrollbar_none::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+}
+/* END scrollbar none scrollbar_none */
+
+.item_lang {
+    width:100%;
+    display:none;
+    overflow:hidden;
+    overflow-x:auto;
+}
+
+.item_lang__active {
+    display:flex;
+    transition: 1s all;
+}
+
+
+
+.lang_link{
     width:70px;
     padding-right:20px;
     background: transparent url(./vector-r.png) no-repeat center;
@@ -37,18 +59,7 @@
 }
 
 
-.lang_link {
-    pointer-events: none;
-    cursor: default;
-}
-.lang_link__active {
-    pointer-events: auto;
-    cursor: pointer;
-}
-
-
-
-.item_lang a:hover {
+.lang_link:hover {
     background: transparent url(./vector-l.png) no-repeat center;
     background-size: 8px;
     background-repeat: no-repeat;
@@ -59,7 +70,7 @@
     background: transparent url();
 }
 
-
+/**************/
 .net {
     display:flex;
     justify-content:end;
@@ -76,4 +87,3 @@
     width: 40px;
     height:40px;
 }
-/**************/

@@ -1,0 +1,127 @@
+
+
+.wrap_box_year {
+    position:relative;
+    width:100%;
+    min-height:300px;
+    margin-bottom:150px;
+}
+.box_year {
+    min-height:300px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:top;
+    z-index:1;
+}
+.year_wrap {
+    display:flex;
+    max-width:600px;
+    justify-content:center;
+    margin:0 auto;
+    background:red;
+    z-index:2;
+    overflow:hidden;
+}
+.year_wrap span {
+    font-size:1400%;
+    font-family: 'Mak';
+    font-style: normal;
+    font-weight: 300;
+}
+.num1 {
+    transform:translateX(0%);
+}
+.num2 {
+    transform:rotate(90deg);
+    margin-left:-70px;
+    margin-top:5%;
+}
+.num3 {
+    margin-left:-20px;
+}
+.num4 {
+    transform:rotate(90deg);
+    margin-left:-135px;
+    padding-right:135px;
+}
+.text_year {
+    position:absolute;
+    width:100%;
+    display:flex;
+    z-index:2;
+    left:0;
+    top:0;
+}
+.text_year h4 {
+    font-size:24px;
+    font-weight:300;
+    font-family:'Roboto';
+}
+.text_year_left {
+    flex: 1 1 250px;
+    padding-top:240px;
+    padding-right:10px;
+}
+.text_year_empty {
+    flex: 0 0 250px;
+}
+.text_year_right {
+    padding-top:180px;
+    flex: 1 1 250px;
+}
+
+
+
+
+@font-face {
+    font-display: swap;
+    font-family: 'Mak';
+    font-style: normal;
+    font-weight: 300;
+    src:    url('../fonts/MAK.woff') format('woff'),
+            url('../fonts/MAK-bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v30-cyrillic_latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-cyrillic_latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+:hover,:active {
+    transition:1s all;
+}
+
+.duo_container {
+    width:80%;
+    min-height:200px;
+    margin-left:auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+.lev1 {
+    width:98%;
+    height:15px;
+    margin-right:auto;
+}
+.lev2 {
+    width:3%;
+    min-height:180px;
+    margin-bottom:auto;
+}
+.lev3 {
+    width:97%;
+    min-height:200px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:50px;
+}
+
+* {
+    background:rgba(0,0,0,0.1);
+    border:1px solid black;
+}
