@@ -5,12 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="button.css">
+    <title>img_position</title>
+    <link rel="stylesheet" href="img_position.css">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
 <!--закомментироваться slider_test.css проект без разметки (обвести и нажать (command + / ))-->
-    <link id="test_css" disabled rel="stylesheet" href="test.css">
+    <link id="test_css" disabled rel="stylesheet" href="../test.css">
 </head>
 <body>
     <div class="head">
@@ -31,20 +31,19 @@
     <div class="main">
         <div class="in_main">
 
-            <div class="buttons_wrap">
-
-                <form class="button_wrap" action="#!">
-                    <button class="btn btn_blue">
-                        <span class="">Перейти</span>
-                    </button>
-                </form>
-
-                <form class="button_wrap" action="#!">
-                    <button class="btn btn_brown">
-                        <span class="">Перейти</span>
-                    </button>
-                </form>
-
+            <div class="container">
+                <div class="container__item item_1">
+                    <h3 class="text">первый элемент у него высший z-index:3, <br>top:0, left:0</h3>
+                    <img class="image" src="../bonya/100.jpeg" alt="">
+                </div>
+                <div class="container__item item_2">
+                    <h3 class="text">z-index:2; <br>не забывает задать контейнеру position:relative</h3>
+                    <img class="image" src="../bonya/101.jpeg" alt="">
+                </div>
+                <div class="container__item item_3">
+                    <h3 class="text">z-index:1, <br>внутри элементам position absolute. <br>и обязательно элементам позицию rigth:0 bottom:0</h3>
+                    <img class="image" src="../bonya/102.jpeg" alt="">
+                </div>
             </div>
 
         </div>

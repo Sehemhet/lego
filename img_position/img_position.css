@@ -1,0 +1,55 @@
+.container {
+    margin:0 auto;
+    background:rgba(0,0,0,0.1);
+    width:80%;
+    height:600px;
+    position:relative; /* позиция родителя */
+}
+.container__item {
+    border:2px dashed green;
+    height:auto;
+    width:400px;
+    position:absolute; /* позиция абсолютная относительно родителям */
+    background:rgba(50,150,50,0.5);
+    overflow:hidden; /*применяем для того, что бы картинки не вылазили при увеличении*/
+
+    display:flex;
+    flex-direction:column; /* сделаем вертикальное направление флексам */
+}
+.text {
+    min-height:100px;
+    font-size:18px;
+    font-weight: 900;
+    flex:1 1 auto; /* займет все оставшееся пространство перед картинкой*/
+}
+.image {
+    height:200px;
+    width:400px;
+    object-fit:fill; /* картинка будет робрезаться не теряя пропорций контейнера или оригнал надо поставить contain */
+}
+/* задаеем приоритет расположения элементов и позицию */
+.item_1 {
+    z-index:3;
+    top:0;
+    left:0;
+}
+.item_2 {
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important; /*important обязательно, так как при ховере применяет трансформ и позиция измениться*/
+}
+.item_3 {
+    z-index:1;
+    right:0;
+    bottom:0;
+}
+
+.container__item:hover {
+    z-index:4; /**/
+    background:rgba(50,150,50,1);
+    & img {
+        transform:scale(1.1); /* увеличиение при хнаведении картинки*/
+        transition: all 1s;  /* плавность увеличения */
+    }
+}

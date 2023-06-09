@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="slider_adapt.css">
-    <!--закомментироваться test.css проект без разметки (обвести и нажать (command + / ))-->
+    <!--закомментироваться slider_test.css проект без разметки (обвести и нажать (command + / ))-->
     <link id="test_css" disabled rel="stylesheet" href="test.css">
 </head>
 <body>
@@ -31,20 +31,24 @@
     <div class="in_main slider_html">
 
         <div class="flex-row">
-            <div class="row__item flex-column">
+            <div class="row__item">
                 <div class="container">
                     <div class="slider">
-                        <div class="slider-line idSlide">
-                            <img class="slider__img" src="../12341231.png" alt="">
-                            <img class="slider__img" src="../321312.png" alt="">
-                            <img class="slider__img" src="../s5_person.png" alt="">
-                            <img class="slider__img" src="../32131.png" alt="">
+                        <div class="slider-line container2">
+                            <img class="js_item_2" src="../12341231.png" alt="">
+                            <img class="js_item_2" src="../321312.png" alt="">
+                            <img class="js_item_2" src="../s5_person.png" alt="">
+                            <img class="js_item_2" src="../32131.png" alt="">
+                            <img class="js_item_2" src="../s5_person.png" alt="">
+                            <img class="js_item_2" src="../32131.png" alt="">
+                            <img class="js_item_2" src="../321312.png" alt="">
+                            <img class="js_item_2" src="../12341231.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="wrap_center">
-                    <button onclick="clickSlides(-1)" class="slider-prev btn"> < </button>
-                    <button onclick="clickSlides(1)" class="slider-next btn"> > </button>
+                    <button class="btn" onclick="clickPag(-1, 'container2')"> < </button>
+                    <button class="btn" onclick="clickPag(1, 'container2')"> > </button>
                 </div>
             </div>
             <div class="row__item">
@@ -55,65 +59,39 @@
                     <ul class="flex-column">
                         <li>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, reprehenderit.
+                                используется два слайдера
                             </p>
                         </li>
                         <li>
                             <p>
-                                Lorem ipsum dolor sit amet.
+                                применяется две функции к двум слайдам
                             </p>
                         </li>
                         <li>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                если применить одну, то будет индексировать элементы двух слайдов на странице
                             </p>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="row__item">
-                <div class="flex-column">
-                    <h2>
-                        title
-                    </h2>
-                    <ul class="flex-column">
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, reprehenderit.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            </p>
-                        </li>
-                    </ul>
+                <div class="container container3">
+                    <img class="js_item_3" src="../12341231.png" alt="">
+                    <img class="js_item_3" src="../321312.png" alt="">
+                    <img class="js_item_3" src="../s5_person.png" alt="">
+                    <img class="js_item_3" src="../32131.png" alt="">
+                    <img class="js_item_3" src="../s5_person.png" alt="">
+                    <img class="js_item_3" src="../32131.png" alt="">
+                    <img class="js_item_3" src="../321312.png" alt="">
+                    <img class="js_item_3" src="../12341231.png" alt="">
+                </div>
+                <div class="wrap_center">
+                    <button class="btn" onclick="clickPag(-1, 'container3')"> < </button>
+                    <button class="btn" onclick="clickPag(1, 'container3')"> > </button>
                 </div>
             </div>
         </div>
-
-        <div class="wrap_cont">
-            <div class="container">
-                <div class="slider">
-                    <div class="slider-line idSlide">
-                        <img class="slider__img" src="../12341231.png" alt="">
-                        <img class="slider__img" src="../321312.png" alt="">
-                        <img class="slider__img" src="../s5_person.png" alt="">
-                        <img class="slider__img" src="../32131.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="wrap_center">
-                <button onclick="clickSlides(-1)" class="slider-prev btn"> < </button>
-                <button onclick="clickSlides(1)" class="slider-next btn"> > </button>
-            </div>
-        </div>
-
     </div>
 
 
