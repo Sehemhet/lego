@@ -3,13 +3,16 @@ const sliderLine = document.querySelector('.slider_line');
 const wrapCard = document.querySelectorAll('.wrap_card');
 const WwrapCard = document.querySelector('.wrap_card').offsetWidth;
 openCard();
+
 function widtnSlider() {
     let Wslider = document.querySelector('.slider').offsetWidth; // Получение ширины блока .slider
     const marginLeft = (Wslider - WwrapCard) / 2; // Рассчитать отступ слева для центрирования
     sliderLine.style.marginLeft = marginLeft + 'px'; // Применить отступ слева
 }
+
 widtnSlider();
 window.addEventListener('resize', widtnSlider);
+
 document.querySelector('.pag_next').addEventListener('click', function () {
     offset += WwrapCard;
     if (offset > (wrapCard.length - 1) * WwrapCard) {
@@ -42,7 +45,8 @@ function openCard() {
         }
     }
 }
-function pagination1(n) {
+
+function pagination(n) {
     offset = WwrapCard * n;
     if (offset < WwrapCard) {
         offset = WwrapCard;
@@ -51,12 +55,12 @@ function pagination1(n) {
     }
     sliderLine.style.left = -offset + 'px';
 }
+
 function clickPag(n, container) {
     if (container === 'container1') {
-        pagination1(offset + n);
+        pagination(offset + n);
     }
 }
-
 
 //let cardOpen = document.querySelector('.wrap_card')
 //let titleCard = document.querySelector('.card')

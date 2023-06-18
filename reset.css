@@ -70,8 +70,6 @@ h1 {
     display:flex;
     font-size:50px;
     font-family: Georgia;
-    color: red;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 a {
