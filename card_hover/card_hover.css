@@ -1,15 +1,14 @@
 .container_card {
     max-width:100%;
-    height:650px;
+    height:550px;
     display:flex;
     flex-wrap:nowrap;
     justify-content:flex-start;
     align-items:center;
     overflow-x:scroll;
-    gap:300px;
 }
 
-.hidden_card,.card {
+.wrap_card__hidden-card,.wrap_card__card{
     height:420px;
     width:320px;
     border:1px solid black;
@@ -21,7 +20,6 @@
     flex-direction:column;
     justify-content:flex-start;
     align-items:start;
-    margin: 0px 5px 0px 5px;
 }
 
 .count_card {
@@ -42,11 +40,11 @@
 }
 
 
-.card {
+.wrap_card__card {
     background: white;
     z-index:1;
 }
-.hidden_card {
+.wrap_card__hidden-card {
     background: black;
 }
 
@@ -63,17 +61,17 @@
     text-transform:uppercase;
 }
 
-.card h1 {
+wrap_card__card h1 {
     color: black;
 }
-.hidden_card h1 {
+.wrap_card__hidden-card h1 {
     color:white;
 }
 
-.card h6 {
+.wrap_card__card h6 {
     color:black;
 }
-.hidden_card h6 {
+.wrap_card__hidden-card h6 {
     color:white;
 }
 
@@ -89,8 +87,8 @@
 .wrap_card {
     height:420px;
     width:320px;
+    flex:0 0 320px;
     position:relative;
-    margin: 0px 5px 0px 5px;
 }
 
 /* штрихкод barcode */
@@ -109,7 +107,6 @@
     border-left:1px solid black;
     border-right:2px solid black;
 }
-
 .line2 {
     margin:0 1px;
     width:5px;
@@ -119,22 +116,71 @@
     border-right:1px solid black;
 }
 
-.card_active {
+
+.wrap_card__active {
+    margin: 0px 10px 0px 10px;
+}
+.card__active {
     transform: rotate(-5deg);
     transform-origin: -50%;
-    top: -40px;
+    top: -20px;
     transition: 0.5s all;
 }
-
-.hidden_card_active {
+.hidden_card__active {
     transform: rotate(5deg);
-    top: 40px;
+    top: 20px;
     z-index:2;
     transition: 0.5s all;
 }
 
+
+
 /* END штрихкод barcode */
 /*  end section_about_content */
+
+/* slider 2 */
+.slider {
+    height:550px;
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+.slider_line {
+    display:flex;
+    flex-wrap:nowrap;
+    position:relative; /* обязательно для правильной работы JS transform */
+    left: 0; /* обязательно для правильной работы transition */
+    transition: all 1s ease;
+    height:550px;
+    align-items:center;
+}
+
+/* pagination */
+.wrap_pagination {
+    margin:50px auto;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    height:40px;
+}
+.pag_prev,
+ .pag_next,
+  .pag_prev_3,
+  .pag_next_3 {
+    height:40px;
+    width:40px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background:rgba(0,0,0,0.5);
+    color: white;
+    font-size:20px;
+    font-weight:900;
+    &:hover {
+        background:rgba(0,0,0,0.9);
+        transition:all ease 1s;
+    }
+}
 
 
 
